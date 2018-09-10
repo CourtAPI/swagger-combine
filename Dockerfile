@@ -1,13 +1,6 @@
-FROM node:10.6.0-slim
+FROM node:10.10.0-alpine
 
-RUN mkdir /app && chmod 755 /app
+RUN yarn global add swagger-combine@0.18.1 
 
-WORKDIR /app
+#ENTRYPOINT ["/usr/local/bin/swagger-combine"]
 
-COPY package.json yarn.lock /app/
-
-RUN yarn install
-
-COPY . /app/
-
-ENTRYPOINT ["/app/swagger-combine.js"]
