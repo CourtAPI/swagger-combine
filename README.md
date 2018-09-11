@@ -1,4 +1,4 @@
-# Dockerized swagger-combine npm package
+# Dockerized swagger-combine npm package [![Docker Build Status](https://img.shields.io/docker/build/courtapi/swagger-combine.svg)](https://hub.docker.com/r/courtapi/swagger-combine/)
 
 Combines multiple Swagger schemas into one dereferenced schema.
 
