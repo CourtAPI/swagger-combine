@@ -1,6 +1,6 @@
-FROM node:10.10.0-alpine
+FROM node:12.7.0-alpine
 
-RUN yarn global add swagger-combine@0.18.1 
+RUN yarn global add swagger-combine@1.0.0
 
 ENTRYPOINT ["/usr/local/bin/swagger-combine"]
 
